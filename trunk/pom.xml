@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <!--
+   Run in ap engine with:
+      apps\appengine-java-sdk-1.7.3\bin\dev_appserver.cmd projects\standrewshalifax\target\standrewshalifax-org-uk
+   -->
+   <!--
+		# two stage release
+		mvn release:prepare
+		mvn release:perform		
+		
+		# two stage release re-tried
+		mvn release:prepare -Dresume=false
+		mvn release:perform		
+		
+		# full console run
+		mvn - -batch-mode clean release:clean release:prepare -DdryRun=true
+		mvn - -batch-mode clean release:clean release:prepare
+		mvn release:clean
+	 -->
+    <!--
+   Deploy with:
+      apps\appengine-java-sdk-1.7.3\bin\appcfg.cmd -e standrewshalifax@gmail.com update projects\standrewshalifax-com\target\standrewshalifax-org-uk
+      Go http://appengine.google.com/ log in using standrewshalifax@gmail.com  
+      Click standrewshalifax-org-uk
+      Click "Versions"
+      Select the latest version
+      Click versions "Make Default"
+      Navigate to: http://standrewshalifax-org-uk.appspot.com/
+   -->
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>uk.org.standrewshalifax</groupId>
+   <artifactId>standrewshalifax-org-uk</artifactId>
+   <packaging>war</packaging>
+   <version>1-SNAPSHOT</version>
+   <name>St. Andrews Halifax</name>
+   <description>Web site for St. Andrews Church Halifax West Yorkshire, UK.</description>
+   <url>http://www.standrewshalifax.org.uk/</url>
+   
+   <scm>
+      <connection>scm:svn:https://standrewshalifax.googlecode.com/svn/trunk/</connection>
+      <developerConnection>scm:svn:https://standrewshalifax.googlecode.com/svn/trunk/</developerConnection>
+   </scm>
+
+   <distributionManagement>
+      <repository>
+         <id>releases</id>
+         <name>Release Repository</name>
+         <url>${project.repository.url}</url>
+      </repository>
+      <snapshotRepository>
+         <id>snapshots</id>
+         <name>Snapshot Repository</name>
+         <url>${project.repository.url}</url>
+      </snapshotRepository>
+   </distributionManagement>
+
+   <dependencies>
+      <!-- Logging uses SLF4J with Log4J implementation -->
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-api</artifactId>
+         <version>1.6.4</version>
+         <scope>compile</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>jcl-over-slf4j</artifactId>
+         <version>1.7.2</version>
+      </dependency>
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-jdk14</artifactId>
+         <version>1.7.2</version>
+      </dependency>
+
+      <!-- App runs within Google App Engine (not sure if this is needed) -->
+      <!--dependency>
+         <groupId>com.google.appengine</groupId>
+         <artifactId>appengine-api-1.0-sdk</artifactId>
+         <version>1.7.3</version>
+         <scope>runtime</scope>
+      </dependency-->
+      
+      <!-- Struts tiles build the pages from JSP fragments-->
+      <dependency>
+         <groupId>struts</groupId>
+         <artifactId>struts</artifactId>
+         <version>1.1</version>
+         <scope>compile</scope>
+         <exclusions>
+            <exclusion>
+               <groupId>javax.sql</groupId>
+               <artifactId>jdbc-stdext</artifactId>
+            </exclusion>
+            <exclusion>
+               <groupId>commons-fileupload</groupId>
+               <artifactId>commons-fileupload</artifactId>
+            </exclusion>
+         </exclusions>
+      </dependency>
+   </dependencies>
+   
+   <build>
+      <finalName>${project.artifactId}</finalName>
+      <resources>
+         <resource>
+            <directory>src/main/resources</directory>
+            <filtering>true</filtering>
+         </resource>
+      </resources>
+      <plugins>
+         <!-- Java compiler version and options -->
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>2.3</version>
+            <configuration>
+               <failOnMissingWebXml>true</failOnMissingWebXml>
+            </configuration>
+         </plugin>
+
+         <!-- Java compiler version and options -->
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>2.3.2</version>
+            <configuration>
+               <fork>true</fork>
+               <compilerVersion>${java.version}</compilerVersion>
+               <source>${java.version}</source>
+               <target>${java.version}</target>
+               <showDeprecation>true</showDeprecation>
+               <showWarnings>true</showWarnings>
+               <compilerArgument>-Xlint:unchecked,fallthrough,finally</compilerArgument>
+               <encoding>${source.encoding}</encoding>
+            </configuration>
+         </plugin>
+         
+         <!-- Resource copier -->
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>2.6</version>
+            <executions>
+               <execution>
+                  <id>copy-resources</id>
+                  <phase>validate</phase>
+                  <goals>
+                     <goal>copy-resources</goal>
+                  </goals>
+                  <configuration>
+                     <outputDirectory>${project.build.outputDirectory}/../${project.artifactId}/WEB-INF</outputDirectory>
+                     <resources>          
+                        <resource>
+                           <directory>src/main/appengine</directory>
+                           <filtering>true</filtering>
+                        </resource>
+                     </resources>              
+                  </configuration>            
+               </execution>
+            </executions>
+         </plugin>
+         
+         <!-- Tomcat runner -->
+         <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <version>2.0</version>
+            <configuration>
+               <systemProperties>
+                  <java.util.logging.config.file>WEB-INF/classes/logging.properties</java.util.logging.config.file>
+               </systemProperties>
+            </configuration>
+        </plugin>
+      </plugins>
+   </build>
+    
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <java.version>1.6</java.version>
+      <appengine.version>1</appengine.version>
+   </properties>
+</project>

@@ -1,0 +1,114 @@
+body{
+    background-color: #FFFFCC;
+    color: #7F0000;
+    font-family: 'Comic Sans MS', 'Arial';
+    font-size: 100%
+}
+
+a{
+    color: #7F3F3F;
+	text-decoration: underline
+}
+
+a:Visited{
+	color: #7F7E7E;
+	text-decoration: underline
+}
+
+a:Active{
+    color: #7F9E9E;
+    text-decoration: underline
+}
+
+a:Hover{
+    color: #7F7F7F;
+    text-decoration: underline
+}
+
+h1{
+}
+
+h2{
+}
+
+h3{
+}
+
+th {
+}
+
+.pageTitle{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 125%
+}
+
+.subTitle{
+    font-weight: bold
+}
+
+.pageIntro{
+    margin-bottom: 10px;
+    font-weight: bold
+}
+
+.pageBody{
+    margin-bottom: 10px
+}
+
+.pageBodyCentred{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px
+}
+
+.pageInclude{
+    margin-bottom: 10px
+}
+
+.simpleList{
+    list-style: none
+}
+
+.pageBodyInput{
+    background-color: #FFFFDD
+}
+
+.tableHeader1{
+    background-color: #FFAAAA;
+    color: #000000;
+    text-align: left;
+    font-weight: bold
+}
+
+.tableBody1{
+    background-color: #FFAAAA;
+    color: #000000
+}
+
+.tableHeader2{
+    background-color: #AAFFAA;
+    color: #000000;
+    text-align: left;
+    font-weight: bold
+}
+
+.tableBody2{
+    background-color: #AAFFAA;
+    color: #000000
+}
+
+.tableHeader3{
+    background-color: #AAAAFF;
+    color: #000000;
+    text-align: left;
+    font-weight: bold
+}
+
+.tableBody3{
+    background-color: #AAAAFF;
+    color: #000000
+}
+
