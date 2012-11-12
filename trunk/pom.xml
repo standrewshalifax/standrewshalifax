@@ -4,6 +4,7 @@
    Run in Google App Engine with:
       mvn clean install
       apps\appengine-java-sdk-1.7.3\bin\dev_appserver.cmd projects\standrewshalifax\target\standrewshalifax-org-uk
+      http://localhost:8080/
    -->
    <!--
    Run in Tomcat with:
@@ -43,7 +44,7 @@
    <groupId>uk.org.standrewshalifax</groupId>
    <artifactId>standrewshalifax-org-uk</artifactId>
    <packaging>war</packaging>
-   <version>1-SNAPSHOT</version>
+   <version>3</version>
    <name>St. Andrews Halifax</name>
    <description>Web site for St. Andrews Church Halifax West Yorkshire, UK.</description>
    <url>http://www.standrewshalifax.org.uk/</url>
@@ -94,6 +95,13 @@
          <version>1.7.3</version>
          <scope>runtime</scope>
       </dependency-->
+
+      <!-- App uses Java mail via the app engine -->
+      <dependency>
+          <groupId>javax.mail</groupId>
+          <artifactId>javax.mail-api</artifactId>
+          <version>1.4.5</version>
+      </dependency>      
       
       <!-- Servlet libraries directly used -->
       <dependency>
@@ -203,6 +211,6 @@
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <java.version>1.6</java.version>
-      <appengine.version>1</appengine.version>
+      <appengine.version>3</appengine.version>
    </properties>
 </project>

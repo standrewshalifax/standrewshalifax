@@ -1,5 +1,5 @@
 <%@page import="uk.org.standrewshalifax.Constants" %>
-<%@page import="uk.org.standrewshalifax.mail.MailDispatcher" %>
+<%@page import="uk.org.standrewshalifax.MailDispatcher" %>
 <%@page import="org.slf4j.Logger" %>
 <%@page import="org.slf4j.LoggerFactory" %>
 
@@ -19,7 +19,7 @@
 		mailDispatcher.setFromAddress(request.getParameter(Constants.FROM_ADDRESS_PARAM));
 		mailDispatcher.setSubject(request.getParameter(Constants.SUBJECT_PARAM));
 		mailDispatcher.setBody(request.getParameter(Constants.BODY_PARAM));
-		mailDispatcher.start();
+		mailDispatcher.send();
 		messageDispatched = true;
 	}catch(Throwable th){
 		log.error("Failed to send message", th);

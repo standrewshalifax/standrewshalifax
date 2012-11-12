@@ -191,7 +191,7 @@ public class Constants {
 	public static final String DIARY_LEFTNAV = "false"; 
 
 	public static final int MESSAGESENT_ID = 17; 
-	public static final String MESSAGESENT_ACTION = "sendMessage.jsp"; 
+	public static final String MESSAGESENT_ACTION = "messageSent.jsp"; 
 	public static final String MESSAGESENT_NAVNAME = "Message Sent"; 
 	public static final String MESSAGESENT_BODY = "messageSentBodyTile.jsp"; 
 	public static final String MESSAGESENT_LOGGER = "messageSent-jsp"; 
