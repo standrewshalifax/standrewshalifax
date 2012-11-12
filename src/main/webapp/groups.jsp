@@ -10,7 +10,7 @@
 
 <%-- Request level initialisation --%>
 <%
-	int pageId = Constants.INDEX_ID;
+	int pageId = Constants.GROUPS_ID;
 	Logger log = LoggerFactory.getLogger(Constants.PAGES[pageId][Constants.LOGGER]);		
 	log.debug("LOADED");
 %>
@@ -20,8 +20,8 @@
 	<tiles:put name="title"		content="<%=Constants.SITE_TITLE%>" direct="true" />
 	<tiles:put name="titlelink"		content="<%=Constants.PAGES[Constants.INDEX_ID][Constants.ACTION]%>" direct="true" />
 	<tiles:put name="subtitle"	content="<%=Constants.PAGES[pageId][Constants.NAVNAME]%>" direct="true" />
-	<tiles:put name="header"	content="titleHeaderTile.jsp" />
+	<tiles:put name="header"	content="navigationHeaderTile.jsp" />
 	<tiles:put name="left"		content="navigationLeftTile.jsp" />
 	<tiles:put name="body"		content="<%=Constants.PAGES[pageId][Constants.BODY]%>" />
 </tiles:insert>
-<!-- Template:End -->
+<!-- Template:Start -->

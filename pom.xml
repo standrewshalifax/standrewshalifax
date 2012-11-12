@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <!--
-   Run in ap engine with:
+   Run in Google App Engine with:
+      mvn clean install
       apps\appengine-java-sdk-1.7.3\bin\dev_appserver.cmd projects\standrewshalifax\target\standrewshalifax-org-uk
+   -->
+   <!--
+   Run in Tomcat with:
+      mvn clean install tomcat7:run
+      http://localhost:8080/standrewshalifax-org-uk/
+   -->
+   <!--
+   Check for broken links:
+       wget - -spider -e robots=off -r -p http://localhost:8080/standrewshalifax-org-uk/
    -->
    <!--
 		# two stage release
@@ -20,6 +30,7 @@
 	 -->
     <!--
    Deploy with:
+      mvn clean install
       apps\appengine-java-sdk-1.7.3\bin\appcfg.cmd -e standrewshalifax@gmail.com update projects\standrewshalifax\target\standrewshalifax-org-uk
       Go http://appengine.google.com/ log in using standrewshalifax@gmail.com  
       Click standrewshalifax-org-uk
@@ -67,11 +78,13 @@
          <groupId>org.slf4j</groupId>
          <artifactId>jcl-over-slf4j</artifactId>
          <version>1.7.2</version>
+         <scope>runtime</scope>
       </dependency>
       <dependency>
          <groupId>org.slf4j</groupId>
          <artifactId>slf4j-jdk14</artifactId>
          <version>1.7.2</version>
+         <scope>runtime</scope>
       </dependency>
 
       <!-- App runs within Google App Engine (not sure if this is needed) -->
@@ -82,23 +95,34 @@
          <scope>runtime</scope>
       </dependency-->
       
+      <!-- Servlet libraries directly used -->
+      <dependency>
+         <groupId>javax.servlet</groupId>
+         <artifactId>servlet-api</artifactId>
+         <version>2.5</version>
+         <scope>provided</scope>
+      </dependency>
+      
       <!-- Struts tiles build the pages from JSP fragments-->
       <dependency>
-         <groupId>struts</groupId>
-         <artifactId>struts</artifactId>
-         <version>1.1</version>
-         <scope>compile</scope>
-         <exclusions>
-            <exclusion>
-               <groupId>javax.sql</groupId>
-               <artifactId>jdbc-stdext</artifactId>
-            </exclusion>
-            <exclusion>
-               <groupId>commons-fileupload</groupId>
-               <artifactId>commons-fileupload</artifactId>
-            </exclusion>
-         </exclusions>
+         <groupId>org.apache.struts</groupId>
+         <artifactId>struts-core</artifactId>
+         <version>1.3.10</version>
+         <scope>runtime</scope>
       </dependency>
+      <dependency>
+         <groupId>org.apache.struts</groupId>
+         <artifactId>struts-tiles</artifactId>
+         <version>1.3.10</version>
+         <scope>runtime</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.struts</groupId>
+         <artifactId>struts-taglib</artifactId>
+         <version>1.3.10</version>
+         <scope>runtime</scope>
+      </dependency>
+
    </dependencies>
    
    <build>
