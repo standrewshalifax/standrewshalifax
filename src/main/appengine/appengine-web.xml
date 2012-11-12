@@ -3,4 +3,5 @@
    <application>${project.artifactId}</application>
    <threadsafe>true</threadsafe>
    <version>${appengine.version}</version>
+   <precompilation-enabled>false</precompilation-enabled>
 </appengine-web-app>
