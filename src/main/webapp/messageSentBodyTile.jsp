@@ -2,6 +2,8 @@
 <%@page import="uk.org.standrewshalifax.MailDispatcher" %>
 <%@page import="org.slf4j.Logger" %>
 <%@page import="org.slf4j.LoggerFactory" %>
+<%@page import="java.io.StringWriter" %>
+<%@page import="java.io.PrintWriter" %>
 
 <%-- Request level initialisation --%>
 <%
@@ -12,13 +14,22 @@
 	// Send an email
 	boolean messageDispatched = false;
 	try{
-		MailDispatcher mailDispatcher = new MailDispatcher();
+		MailDispatcher mailDispatcher = new MailDispatcher();      
 		mailDispatcher.setToName(request.getParameter(Constants.TO_NAME_PARAM));
 		mailDispatcher.setToAddress(request.getParameter(Constants.TO_ADDRESS_PARAM));
-		mailDispatcher.setFromName(request.getParameter(Constants.FROM_NAME_PARAM));
-		mailDispatcher.setFromAddress(request.getParameter(Constants.FROM_ADDRESS_PARAM));
+		mailDispatcher.setFromName("Website");
+		mailDispatcher.setFromAddress("standrewshalifax@gmail.com");
 		mailDispatcher.setSubject(request.getParameter(Constants.SUBJECT_PARAM));
-		mailDispatcher.setBody(request.getParameter(Constants.BODY_PARAM));
+      StringWriter buf = new StringWriter();
+      PrintWriter pw = new PrintWriter(buf);
+      pw.print("From: ");
+      pw.print(request.getParameter(Constants.FROM_NAME_PARAM).trim());
+      pw.print(" <");
+      pw.print(request.getParameter(Constants.FROM_ADDRESS_PARAM).trim());
+      pw.println(">");
+      pw.println("Message: ");
+      pw.println(request.getParameter(Constants.BODY_PARAM).trim());
+		mailDispatcher.setBody(buf.toString());
 		mailDispatcher.send();
 		messageDispatched = true;
 	}catch(Throwable th){

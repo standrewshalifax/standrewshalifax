@@ -20,8 +20,6 @@ Send us a message
 <form name="contactRequest" action="<%= Constants.MESSAGESENT_ACTION%>" method="POST">
 	<input type="hidden" name="<%= Constants.TO_NAME_PARAM %>" value="Contact"/>
 	<input type="hidden" name="<%= Constants.TO_ADDRESS_PARAM %>" value="contact@standrewshalifax.org.uk"/>
-	<%-- input type="hidden" name="<= Constants.FROM_NAME_PARAM >" value="Contact Us"/ --%>
-	<%-- input type="hidden" name="<= Constants.FROM_ADDRESS_PARAM >" value="noreply@standrewshalifax.org.uk"/ --%>
 	<input type="hidden" name="<%= Constants.SUBJECT_PARAM %>" value="Contact Request"/>
 	<table>
 		<tr>

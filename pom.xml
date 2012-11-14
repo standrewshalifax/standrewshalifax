@@ -44,7 +44,7 @@
    <groupId>uk.org.standrewshalifax</groupId>
    <artifactId>standrewshalifax-org-uk</artifactId>
    <packaging>war</packaging>
-   <version>3</version>
+   <version>8</version>
    <name>St. Andrews Halifax</name>
    <description>Web site for St. Andrews Church Halifax West Yorkshire, UK.</description>
    <url>http://www.standrewshalifax.org.uk/</url>
@@ -89,19 +89,20 @@
       </dependency>
 
       <!-- App runs within Google App Engine (not sure if this is needed) -->
-      <!--dependency>
+      <dependency>
          <groupId>com.google.appengine</groupId>
          <artifactId>appengine-api-1.0-sdk</artifactId>
          <version>1.7.3</version>
          <scope>runtime</scope>
-      </dependency-->
+      </dependency>
 
       <!-- App uses Java mail via the app engine -->
       <dependency>
-          <groupId>javax.mail</groupId>
-          <artifactId>javax.mail-api</artifactId>
-          <version>1.4.5</version>
-      </dependency>      
+         <groupId>javax.mail</groupId>
+         <artifactId>javax.mail-api</artifactId>
+         <version>1.4.5</version>
+         <scope>compile</scope>
+      </dependency>
       
       <!-- Servlet libraries directly used -->
       <dependency>
@@ -211,6 +212,6 @@
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <java.version>1.6</java.version>
-      <appengine.version>3</appengine.version>
+      <!--appengine.version>8</appengine.version-->
    </properties>
 </project>

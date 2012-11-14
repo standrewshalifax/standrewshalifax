@@ -39,6 +39,22 @@
 	<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"/>
 	<link href="style.css" rel="stylesheet"	type="text/css" />
 	<title><tiles:get name="title"/>-<tiles:get name="subtitle"/></title>
+   
+   <!-- Google Analytics tag -->
+   <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36311390-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+   </script>
+   
 </head>
 
 <%-- Mark up (body) --%>
