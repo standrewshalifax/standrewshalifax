@@ -20,13 +20,16 @@
       Check at: http://standrewshalifax-org-uk.appspot.com/
    Leave app ready for next version:
       Increment the version in the <version> section below by 1
+         grep "<version>" pom.xml | head -2
+         sed -i "s/<version>12<\/version>/<version>13<\/version>/" pom.xml
+         svn commit -m "Roll version number"
       Commit the changes to pom.xml
    -->
    <modelVersion>4.0.0</modelVersion>
    <groupId>uk.org.standrewshalifax</groupId>
    <artifactId>standrewshalifax-org-uk</artifactId>
    <packaging>war</packaging>
-   <version>12</version>
+   <version>13</version>
    <name>St. Andrews Halifax</name>
    <description>Web site for St. Andrews Church Halifax West Yorkshire, UK.</description>
    <url>http://www.standrewshalifax.org.uk/</url>
