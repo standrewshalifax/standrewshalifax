@@ -1,50 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <!--
-   Run in Google App Engine with:
-      mvn clean install
-      apps\appengine-java-sdk-1.7.3\bin\dev_appserver.cmd projects\standrewshalifax\target\standrewshalifax-org-uk
-      http://localhost:8080/
-   -->
-   <!--
-   Run in Tomcat with:
+   Making changes:
+      Update to get latest version from SVN      
+      Make changes
+   Testing:
       mvn clean install tomcat7:run
-      http://localhost:8080/standrewshalifax-org-uk/
-   -->
-   <!--
-   Check for broken links:
-       wget - -spider -e robots=off -r -p http://localhost:8080/standrewshalifax-org-uk/
-   -->
-   <!--
-		# two stage release
-		mvn release:prepare
-		mvn release:perform		
-		
-		# two stage release re-tried
-		mvn release:prepare -Dresume=false
-		mvn release:perform		
-		
-		# full console run
-		mvn - -batch-mode clean release:clean release:prepare -DdryRun=true
-		mvn - -batch-mode clean release:clean release:prepare
-		mvn release:clean
-	 -->
-    <!--
-   Deploy with:
-      mvn clean install
+      Check at: http://localhost:8080/standrewshalifax-org-uk/
+   Check in local Google app engine: (optional)
+      apps\appengine-java-sdk-1.7.3\bin\dev_appserver.cmd projects\standrewshalifax\target\standrewshalifax-org-uk
+      Check at: http://localhost:8080/      
+   Deploy new version:
       apps\appengine-java-sdk-1.7.3\bin\appcfg.cmd -e standrewshalifax@gmail.com update projects\standrewshalifax\target\standrewshalifax-org-uk
       Go http://appengine.google.com/ log in using standrewshalifax@gmail.com  
       Click standrewshalifax-org-uk
       Click "Versions"
       Select the latest version
       Click versions "Make Default"
-      Navigate to: http://standrewshalifax-org-uk.appspot.com/
+      Check at: http://standrewshalifax-org-uk.appspot.com/
+   Leave app ready for next version:
+      Increment the version in the <version> section below by 1
+      Commit the changes to pom.xml
    -->
    <modelVersion>4.0.0</modelVersion>
    <groupId>uk.org.standrewshalifax</groupId>
    <artifactId>standrewshalifax-org-uk</artifactId>
    <packaging>war</packaging>
-   <version>10</version>
+   <version>11</version>
    <name>St. Andrews Halifax</name>
    <description>Web site for St. Andrews Church Halifax West Yorkshire, UK.</description>
    <url>http://www.standrewshalifax.org.uk/</url>
@@ -212,6 +194,5 @@
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <java.version>1.6</java.version>
-      <!--appengine.version>8</appengine.version-->
    </properties>
 </project>
