@@ -44,14 +44,14 @@
    <groupId>uk.org.standrewshalifax</groupId>
    <artifactId>standrewshalifax-org-uk</artifactId>
    <packaging>war</packaging>
-   <version>10-SNAPSHOT</version>
+   <version>10</version>
    <name>St. Andrews Halifax</name>
    <description>Web site for St. Andrews Church Halifax West Yorkshire, UK.</description>
    <url>http://www.standrewshalifax.org.uk/</url>
    
    <scm>
-      <connection>scm:svn:https://standrewshalifax.googlecode.com/svn/tags/standrewshalifax-org-uk-9</connection>
-      <developerConnection>scm:svn:https://standrewshalifax.googlecode.com/svn/tags/standrewshalifax-org-uk-9</developerConnection>
+      <connection>scm:svn:https://standrewshalifax.googlecode.com/svn/tags/standrewshalifax-org-uk-10</connection>
+      <developerConnection>scm:svn:https://standrewshalifax.googlecode.com/svn/tags/standrewshalifax-org-uk-10</developerConnection>
    </scm>
 
    <distributionManagement>
