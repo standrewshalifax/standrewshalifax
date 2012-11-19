@@ -133,21 +133,4 @@ public class Utilities{
 		// if there are missing tags return a warning instead of the provided text
 		return rawHtml;
 	}
-
-	
-	/**
-	 * Test main for resource loader
-	 */
-	public static void main(String[] args){
-		try{
-			String resource;
-			Logger logger = LoggerFactory.getLogger(LogHelper.class.getName());
-			resource = Utilities.loadResourceFromWebapp(Constants.WHATSNEW_FILE, logger);
-			logger.debug("read: [" + resource + "]");
-			resource = Utilities.loadResourceFromWebapp("/test.txt", logger);
-			logger.debug("read: [" + resource + "]");
-		}catch(Throwable th){
-			th.printStackTrace();
-		}
-	}
 }
