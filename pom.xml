@@ -12,6 +12,7 @@
       Check at: http://localhost:8080/      
    Deploy new version:
       apps\appengine-java-sdk-1.7.3\bin\appcfg.cmd -e standrewshalifax@gmail.com update projects\standrewshalifax\target\standrewshalifax-org-uk
+      Login using the Google account
       Go http://appengine.google.com/ log in using standrewshalifax@gmail.com  
       Click standrewshalifax-org-uk
       Click "Versions"
