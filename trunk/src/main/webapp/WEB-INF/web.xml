@@ -8,4 +8,51 @@
       <welcome-file>index.jsp</welcome-file>
    </welcome-file-list>
 
+   <!-- Redirection servlet which maps .do requests to .jsp-->
+   <servlet>
+      <servlet-name>redirect</servlet-name>
+      <servlet-class>uk.org.standrewshalifax.Redirect</servlet-class>
+      <init-param>
+         <param-name>/taskForces.do</param-name>
+         <param-value>/taskForces.jsp</param-value>
+      </init-param>
+      <init-param>
+         <param-name>/circuitNewsAndEvents.do</param-name>
+         <param-value>/circuitNewsAndEvents.jsp</param-value>
+      </init-param>            
+      <init-param>
+         <param-name>prayerandmission.xhtml</param-name>
+         <param-value>/prayerAndMission.jsp</param-value>
+      </init-param>
+      <init-param>
+         <param-name>aol.xhtml</param-name>
+         <param-value>/staticGroups.jsp?includeFile=aol.xhtml</param-value>
+      </init-param>      
+      <init-param>
+         <param-name>/staticOther.do?includeFile=/letter.xhtml</param-name>
+         <param-value>/staticOther.jsp?includeFile=letter.xhtml</param-value>
+      </init-param>      
+      <init-param>
+         <param-name>outreachandawareness.xhtml</param-name>
+         <param-value>/staticGroups.jsp?includeFile=outreachandawareness.xhtml</param-value>      
+      </init-param>      
+      <init-param>
+         <param-name>scouts.xhtml</param-name>
+         <param-value>/staticGroups.jsp?includeFile=scouts.xhtml</param-value>
+      </init-param>            
+      <init-param>
+         <param-name>/staticOther.do?includeFile=/BacktoChurchSunday.xhtml</param-name>
+         <param-value>/index.jsp</param-value>
+      </init-param>            
+      <init-param>
+         <param-name>/staticGroups.do?includeFile=/yw.xhtml</param-name>
+         <param-value>/groups.jsp#yw</param-value>
+      </init-param>            
+      <load-on-startup>3</load-on-startup>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>redirect</servlet-name>
+      <url-pattern>*.do</url-pattern>
+   </servlet-mapping>
+   
 </web-app>
