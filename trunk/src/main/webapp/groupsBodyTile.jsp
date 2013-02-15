@@ -129,8 +129,8 @@ It&acute;s a good way to get to know each other well.&nbsp;
 <br/>
 Meeting on the first Tuesday in the month at 8pm in the coffee lounge, we have talks, 
 walks and generally enjoyable company.&nbsp;
-<br/>
-Please take a look at the<a href="staticGroups.jsp?includeFile=<%=Constants.YW_FILE%>"> programme</a> to find out what we are doing.
+<!--<br/>
+Please take a look at the<a href="staticGroups.jsp?includeFile=<%=Constants.YW_FILE%>"> programme</a> to find out what we are doing.-->
 <br/>
 For further information please contact us using our <a href="<%=Constants.PAGES[Constants.VISITORSFORM_ID][Constants.ACTION]%>">contact form</a>.<br/>
 </div>
@@ -142,11 +142,10 @@ For further information please contact us using our <a href="<%=Constants.PAGES[
 The Club meets approximately every six weeks at 7 p.m. in the coffee lounge at church to share a three course meal
  and enjoy fellowship and entertainment.&nbsp; After the meal there is an interesting and entertaining speaker.&nbsp; 
  The club is open to men of all ages.&nbsp;
-<br/>
-Please take a look at the <a href="pdfs/MensSupperClubProgramme.pdf">Programme</a> to find out what we are doing.
+<!--<br/>
+Please take a look at the <a href="pdfs/MensSupperClubProgramme.pdf">Programme</a> to find out what we are doing.-->
 <br/>
 For further information please contact us using our <a href="<%=Constants.PAGES[Constants.VISITORSFORM_ID][Constants.ACTION]%>">contact form</a>.<br/>
-<!--For further information please contact Gordon Smith on Hx 363584-->
 </div>
 <br/>
 
@@ -169,7 +168,7 @@ For further information please contact us using our <a href="<%=Constants.PAGES[
 The group is for all pre-school children from birth to four years to come along with their Mum
 , Dad, Grandma, Granddad or carer.&nbsp;
 <br/>
-Parents and Toddlers meet on Monday mornings from 9-30 - 11-30 during term time and in the summer holidays.&nbsp;
+Parents and Toddlers meet on Monday mornings from 9 - 11-30 during term time and in the summer holidays.&nbsp;
 <br/>
 The group provides a happy, friendly environment for children to play together.&nbsp;
 <br/>

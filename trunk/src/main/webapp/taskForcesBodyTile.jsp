@@ -91,7 +91,7 @@ The St Andrew&acute;s premises are large and, although a caretaker is employed, 
 <br/>
 For information and booking, telephone 360950.
 <br/>
-For further information, please contact Gordon Smith using our <a href="<%=Constants.PAGES[Constants.VISITORSFORM_ID][Constants.ACTION]%>">contact form</a>.<br/>.&nbsp;
+For further information please contact us using our <a href="<%=Constants.PAGES[Constants.VISITORSFORM_ID][Constants.ACTION]%>">contact form</a>.<br/>
 <!--For further information, please contact Adrian Kellett on Hx 378494.&nbsp;-->
 </div>
 <br/>
@@ -104,7 +104,7 @@ conduct of worship and to be the eyes and ears of our church-conscious of the ne
 As such they will make themselves known to you.&nbsp; We are a friendly bunch and we welcome you to St Andrew&acute;s.&nbsp;
 <br/>
 We hope you will enjoy being part of our church family.&nbsp;
-<br/>
+<br/><br/>
 In the name of the loving and living Lord
 <br/>
 <!--Dr. John Hargreaves
