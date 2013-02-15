@@ -31,7 +31,11 @@
       <init-param>
          <param-name>/staticOther.do?includeFile=/letter.xhtml</param-name>
          <param-value>/staticOther.jsp?includeFile=letter.xhtml</param-value>
-      </init-param>      
+      </init-param>
+	<init-param>
+         <param-name>/staticOther.do?includeFile=/christianityexplored.xhtml</param-name>
+         <param-value>/staticOther.jsp?includeFile=christianityexplored.xhtml</param-value>
+      </init-param>
       <init-param>
          <param-name>outreachandawareness.xhtml</param-name>
          <param-value>/staticGroups.jsp?includeFile=outreachandawareness.xhtml</param-value>      
