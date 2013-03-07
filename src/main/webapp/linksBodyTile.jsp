@@ -52,6 +52,12 @@
 <a href="http://www.westyorkshiremethodist.org.uk/" target="new">
 	The West Yorkshire Methodist District
 </a><br/>
+<a href="http://www.calderdale-interfaith.co.uk/" target="new">
+	Calderdale Interfaith Council
+</a><br/>
+<a href="http://www.busoasis.org.uk/" target="new">
+	Bus Oasis
+</a><br/>
 </span>
 <br/>
 
