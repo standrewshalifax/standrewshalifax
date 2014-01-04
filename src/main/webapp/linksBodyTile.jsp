@@ -31,8 +31,8 @@
 <a href="http://www.calderdalemethodists.org.uk" target="new">
 	Calderdale Methodist Circuit
 </a><br/>
-<a href="http://www.mayc.info" target="new">
-	MAYC (Methodist Association of Youth Clubs)
+<a href="http://www.childrenandyouth.org.uk/" target="new">
+	Methodist Children and Youth
 </a><br/>
 <a href="http://www.methodist.org.uk/" target="new">
 	The Methodist Church of Great Britain
