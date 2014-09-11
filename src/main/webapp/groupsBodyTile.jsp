@@ -15,13 +15,13 @@
 <tr>
 	<td><a href="#beavers">Beavers</a></td>
 	<td><a href="#yw">YW</a></td>
-	<td><a href="#seekershousegroup">Seekers House Group</a></td>
+	<td><a href="#seekersfellowship">The Seekers Fellowship</a></td>
 </tr>
 
 <tr>
 	<td><a href="#rainbows">Rainbows</a></td>
 	<td><a href="#menssupperclub">Mens Supper Club</a></td>
-	<td><a href="#greenparkstudygroup">Green Park Study Group</a></td>
+	<td><a href="#greenparkfellowship">Green Park fellowship Group</a></td>
 </tr>
 
 <tr>
@@ -33,17 +33,18 @@
 <tr>
 	<td><a href="#parentandtoddlers">Parents and Toddlers</a></td>
 	<td><a href="#juniorchurch">Junior Church</a></td>
-	<td><a href="#guides">Guides</a></td>
+	<td><a href="#mondaynightfellowship">Monday Night Fellowship Group</a></td>
 </tr>
 
 <tr>
 	<td><a href="#musicgroup">Music Group</a></td>
-	<td><a href="#littlemonkeys">little monkeys pre-school</a></td>
+	<td><a href="#littlemonkeys">Little monkeys pre-school</a></td>
 	<td><a href="#scoutsandexplorerscouts">Scouts and Explorer Scouts</a></td>
 </tr>
 
 <tr>
 	<td><a href="#aol">AOL</a></td>
+	<td><a href="#messychurch">Messy Church</a></td>
 	<td>&nbsp;</td>
 </tr>
 </table>
@@ -93,17 +94,6 @@ different opportunities to develop themselves and learn new skills.&nbsp;
 <br/>
 For further information please contact us using our <a href="<%=Constants.PAGES[Constants.VISITORSFORM_ID][Constants.ACTION]%>">contact form</a>.<br/>
 <!--For further information, Sarah Maligranda on Hx 251189-->
-</div>
-<br/>
-
-<div id="guides">
-<h2>Guides</h2>
-<a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
-The 49th St Andrew&acute;s Guides meet on Thursday evenings at 7-30 pm.&nbsp; in the Disco Room.&nbsp; Open to girls aged from 10-15 years.&nbsp; 
-Activities include craft, cooking and outdoor pursuits, indoor/outdoor camping.&nbsp;
-<br/>
-For further information please contact us using our <a href="<%=Constants.PAGES[Constants.VISITORSFORM_ID][Constants.ACTION]%>">contact form</a>.<br/>
-<!--For further information, please contact Karen Brooke on Hx 360075-->
 </div>
 <br/>
 
@@ -180,8 +170,18 @@ For further information please contact us using our <a href="<%=Constants.PAGES[
 </div>
 <br/>
 
+<div id="messychurch">
+<h2>Messy Church</h2>
+<a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
+Messy Church meets one Friday each month after school in the Main Hall.&nbsp; 
+<br/>
+The group enjoys bible based crafts and activities and is followed by a light tea together.&nbsp;
+<br/>
+For further information please contact us using our <a href="<%=Constants.PAGES[Constants.VISITORSFORM_ID][Constants.ACTION]%>">contact form</a>.<br/></div>
+<br/>
+
 <div id="littlemonkeys">
-<h2>little monkeys pre-school</h2>
+<h2>Little monkeys pre-school</h2>
 <a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
 Children are welcome at little monkeys from ages 2 ½ to 4 years. 
 Funding is available from the term after their 3rd birthday. 
@@ -219,8 +219,8 @@ For more details call Kirsty on Hx 340164 or just come along!
 </div>
 <br/>
 
-<div id="seekershousegroup">
-<h2>Seekers House Group</h2>
+<div id="seekersfellowship">
+<h2>The Seekers Fellowship</h2>
 <a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
 The group meets on the first Monday of each month between between 7-30 and 9 pm at the home of fellowship members.&nbsp;
 <br/>
@@ -232,14 +232,25 @@ For further information please contact us using our <a href="<%=Constants.PAGES[
 <br/>
 
 
-<div id="greenparkstudygroup">
-<h2>Green Park Study Group</h2>
+<div id="greenparkfellowship">
+<h2>Green Park Fellowship Group</h2>
 <a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
-The group meets on pre-arranged Wednesday evenings between 7-30 and 10 pm at the home of Sue and Mike Wright.&nbsp;
+The group meets on pre-arranged Thursday evenings between 7-30 and 10 pm at the home of Sue and Mike Wright.&nbsp;
 <br/>
 It is a welcoming group which studies the Bible and discusses world issues.&nbsp;
 <br/>
 For further details, please contact Sue Wright on Hx 354736.&nbsp;
+</div>
+<br/>
+
+<div id="mondaynightfellowship">
+<h2>Monday Night Fellowship Group</h2>
+<a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
+Meets monthly on prearranged Monday evenings at 7-30pm.&nbsp;
+<br/>
+The group will be pleased to welcome old and new members at 7.30 p.m.&nbsp;
+<br/>
+For further information please contact us using our <a href="<%=Constants.PAGES[Constants.VISITORSFORM_ID][Constants.ACTION]%>">contact form</a>.<br/>
 </div>
 <br/>
 
