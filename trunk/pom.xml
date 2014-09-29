@@ -30,7 +30,7 @@
    <groupId>uk.org.standrewshalifax</groupId>
    <artifactId>standrewshalifax-org-uk</artifactId>
    <packaging>war</packaging>
-   <version>51</version>
+   <version>52</version>
    <name>St. Andrews Halifax</name>
    <description>Web site for St. Andrews Church Halifax West Yorkshire, UK.</description>
    <url>http://www.standrewshalifax.org.uk/</url>
