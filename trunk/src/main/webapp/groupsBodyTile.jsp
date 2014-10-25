@@ -117,7 +117,7 @@ For more information contact: David Grundy on Hx 346303
 YW is a friendly group open to all women who want a relaxing and friendly night out once a month.&nbsp; 
 It&acute;s a good way to get to know each other well.&nbsp;
 <br/>
-Meeting on the first Tuesday in the month at 8pm in the coffee lounge, we have talks, 
+Meeting on the first Tuesday in the month at 7:30pm in the coffee lounge, we have talks, 
 walks and generally enjoyable company.&nbsp;
 <!--<br/>
 Please take a look at the<a href="staticGroups.jsp?includeFile=<%=Constants.YW_FILE%>"> programme</a> to find out what we are doing.-->
