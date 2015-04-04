@@ -67,7 +67,6 @@ Room Hire
 <br/>
 <span class="pageBody">
 Rooms of various sizes are available to rent at St Andrew's for one off events, such as children's parties, or on a longer term basis, such as fitness classes.<br/>
-Enquiries about room bookings should be made to the caretaker on HX 360950<br/>
 </span>
 <br/>
 

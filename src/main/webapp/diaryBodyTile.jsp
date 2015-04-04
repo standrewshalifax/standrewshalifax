@@ -28,8 +28,7 @@
  
 <table>
 <tr><td colspan="2"><span class="pageIntro">Tuesday</span></td></tr>
-<tr><td>6-00 pm</td><td><a href="<%=Constants.PAGES[Constants.GROUPS_ID][0]%>#beavers">Beavers</a></td></tr>
-<tr><td>&nbsp;</td><td><a href="<%=Constants.PAGES[Constants.GROUPS_ID][0]%>#cubs">Cubs</a></td></tr>
+
 <tr><td>8 pm</td><td><a href="<%=Constants.PAGES[Constants.GROUPS_ID][0]%>#yw">YW</a> (first Tuesday in the month)</td></tr>
 </table>
 <br/>
@@ -44,6 +43,8 @@
 
 <table>
 <tr><td colspan="2"><span class="pageIntro">Thursday</span></td></tr>
+<tr><td>6 pm</td><td><a href="<%=Constants.PAGES[Constants.GROUPS_ID][0]%>#beavers">Beavers</a></td></tr>
+<tr><td>6-15 pm</td><td><a href="<%=Constants.PAGES[Constants.GROUPS_ID][0]%>#cubs">Cubs</a></td></tr>
 <tr><td>6 pm</td><td><a href="<%=Constants.PAGES[Constants.GROUPS_ID][0]%>#rainbows">Rainbows</a></td></tr>
 <tr><td>6-15 pm</td><td><a href="<%=Constants.PAGES[Constants.GROUPS_ID][0]%>#brownies">Brownies</a></td></tr>
 <tr><td>7-30 pm</td><td><a href="<%=Constants.PAGES[Constants.GROUPS_ID][0]%>#guides">Guides</a></td></tr>
