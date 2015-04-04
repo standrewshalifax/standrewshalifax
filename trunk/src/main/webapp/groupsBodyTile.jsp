@@ -53,7 +53,7 @@
 <div id="beavers">
 <h2>Beavers</h2>
 <a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
-The 23rd St Andrew&acute;s Beaver Scouts meet in the Main Hall on Tuesday evenings from 6-00 until 7-15 pm.&nbsp;
+The 23rd St Andrew&acute;s Beaver Scouts meet in the Main Hall on Thursday evenings from 6-00 until 7-15 pm.&nbsp;
 Open to boys and girls from ages 6-8 years.&nbsp; Beaver scouts are the youngest members of the Scout movement.&nbsp;
 Through games and activities children have fun and are introduced to all that Scouting has to offer.&nbsp;
 <br/>
@@ -76,7 +76,7 @@ For further information please contact us using our <a href="<%=Constants.PAGES[
 <div id="cubs">
 <h2>Cubs</h2>
 <a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
-Cubs meet in the Main Hall on Tuesday from 6-15 pm to 7-30 pm.&nbsp; Although traditionally cubs was
+Cubs meet in the Main Hall on Thursday from 6-15 pm to 7-30 pm.&nbsp; Although traditionally cubs was
  junior scouting for boys, St Andrew&acute;s cubs now also welcomes girls.&nbsp;
 <br/>
 For further information please contact us using our <a href="<%=Constants.PAGES[Constants.VISITORSFORM_ID][Constants.ACTION]%>">contact form</a>.<br/>
@@ -142,7 +142,7 @@ For further information please contact us using our <a href="<%=Constants.PAGES[
 <div id="ladiesclub">
 <h2>Ladies Club</h2>
 <a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
-The Ladies Club meets in the church hall fortnightly on Wednesdays from 7-30 pm until 9pm.&nbsp; 
+The Ladies Club meets in the church hall fortnightly on Wednesdays from 7-30 pm.&nbsp; 
 It is open to women of all ages.&nbsp;
 <br/>
 Meetings comprise a speaker or entertainment or activity and are followed by light refreshments.&nbsp;
