@@ -31,7 +31,7 @@
 </tr>
 
 <tr>
-	<td><a href="#parentandtoddlers">Parents and Toddlers</a></td>
+	<td><a href="#parentandtoddlers">St Andrew's Tots Group</a></td>
 	<td><a href="#juniorchurch">Junior Church</a></td>
 	<td><a href="#mondaynightfellowship">Monday Night Fellowship Group</a></td>
 </tr>
@@ -43,7 +43,6 @@
 </tr>
 
 <tr>
-	<td><a href="#aol">AOL</a></td>
 	<td><a href="#messychurch">Messy Church</a></td>
 	<td>&nbsp;</td>
 </tr>
@@ -153,12 +152,12 @@ For further information please contact us using our <a href="<%=Constants.PAGES[
 <br/>
 
 <div id="parentandtoddlers">
-<h2>Parents and Toddlers</h2>
+<h2>St Andrew's Tots Group</h2>
 <a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
 The group is for all pre-school children from birth to four years to come along with their Mum
 , Dad, Grandma, Granddad or carer.&nbsp;
 <br/>
-Parents and Toddlers meet on Monday mornings from 9 - 11-30 during term time and in the summer holidays.&nbsp;
+St Andrew's Tots Group meet on Monday mornings from 9 - 11-30 during term time. &nbsp;
 <br/>
 The group provides a happy, friendly environment for children to play together.&nbsp;
 <br/>
@@ -183,9 +182,9 @@ For further information please contact us using our <a href="<%=Constants.PAGES[
 <div id="littlemonkeys">
 <h2>Little monkeys pre-school</h2>
 <a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
-Children are welcome at little monkeys from ages 2 ½ to 4 years. 
+Children are welcome at little monkeys from ages 2 to 4 years. 
 Funding is available from the term after their 3rd birthday. 
-Sessions run Tues, Wed, Thurs from 9.30am until 2.30pm.
+Sessions run Mon, Tues, Wed, Thurs from 9.30am until 2.30pm.
 Costs £6 including snack per session.&nbsp;
 <br/>
 For further information visit their <a href="http://www.littlemonkeys-halifax.org.uk/" target="new">website</a>.<br/>
@@ -203,19 +202,6 @@ The material is of a light nature, songs of worship and anthems which are pleasi
 <br/>
 For further information please contact us using our <a href="<%=Constants.PAGES[Constants.VISITORSFORM_ID][Constants.ACTION]%>">contact form</a>.<br/>
 <!--For further details, please contact Enid Walker on Hx 374571.&nbsp;-->
-</div>
-<br/>
-
-<div id="aol">
-<h2>AOL</h2>
-<a href="index.jsp">Home Page</a> - <a href="#top">Back to top</a><br/>
-AOL (About Our Lord) is for anyone between 10 and 18.&nbsp;  We meet on Sunday mornings between 10:30am and 11:30am for
-quizzes, discussions, crafts &amp; games.&nbsp;  We also go to events such as gigs and festvals at weekends.&nbsp;  
-<br/>
-Please take a look at the <a href="staticGroups.jsp?<%= Constants.INCLUDE_FILE%>=<%= Constants.AOL_FILE%>">AOL home page</a>.&nbsp;
-<br/>
-For more details call Kirsty on Hx 340164 or just come along!
-<!--For more details call Kirsty on Hx 340164, David on Hx 251273, or just come along!-->
 </div>
 <br/>
 
