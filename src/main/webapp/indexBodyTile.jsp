@@ -45,7 +45,7 @@
 				We are a large, friendly congregation of all ages, meeting in a modern building.&nbsp; 
 				We hope you will come and join us.&nbsp; We assure you of a warm welcome!<br/>
 				<br/>
-				<a href="staticOther.jsp?<%= Constants.INCLUDE_FILE%>=<%= Constants.LETTER_FILE%>">A letter from our minister.</a><br/>
+				<a href="pdfs/letter.pdf">A letter from our minister</a><br/>
 				<br/>	
 				Worship is on Sunday mornings at 10.30am and Sunday evenings (except the first Sunday) at 6.00pm.
 				See the <a href="<%= Constants.NEWSHEET_FILE%>">newssheet</a> for further details<br/>
@@ -84,7 +84,7 @@
 				</tr>
 				<tr>
 					<td class="tableBody1" headers="new">
-							<a href="staticOther.jsp?<%= Constants.INCLUDE_FILE%>=<%= Constants.LETTER_FILE%>" class="tableBody1">A letter from our minister</a><br/>
+							<a href="pdfs/letter.pdf">A letter from our minister</a><br/>
 					</td>
 					<!-- Members -->
 					<td headers="mem" class="tableBody2">
